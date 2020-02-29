@@ -12,7 +12,7 @@ const parseStringAsArray = require('../utils/parseStringAsArray');
 module.exports = {
     async index(request, response) {
         const devs = await Dev.find();
-        return response.json({ devs });
+        return response.json( devs );
     },
 
     async store(request, response) {
